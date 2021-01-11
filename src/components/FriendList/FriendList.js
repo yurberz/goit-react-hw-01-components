@@ -33,7 +33,7 @@ FriendList.propTypes = {
 };
 
 FriendListItem.propTypes = {
-  id: PropTypes.string,
+  id: PropTypes.number,
   avatar: PropTypes.string,
   name: PropTypes.string,
   isOnline: PropTypes.bool,
