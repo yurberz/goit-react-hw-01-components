@@ -28,8 +28,8 @@ function FriendListItem({ id, avatar, name, isOnline }) {
   );
 }
 
-FriendListItem.defaultProps = {
-  isOnline: true,
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(PropTypes.object),
 };
 
 FriendListItem.propTypes = {
@@ -39,8 +39,8 @@ FriendListItem.propTypes = {
   isOnline: PropTypes.bool,
 };
 
-FriendList.propTypes = {
-  friends: PropTypes.arrayOf(PropTypes.object),
+FriendListItem.defaultProps = {
+  isOnline: true,
 };
 
 export default FriendList;

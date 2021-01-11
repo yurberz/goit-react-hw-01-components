@@ -1,31 +1,22 @@
 import React from "react";
 import styles from "./App.module.css";
+import data from "../../data";
 import Profile from "../Profile/Profile";
-import user from "../../data/user.json";
 import Statistics from "../Statistics/Statistics";
-import statisticalData from "../../data/statistical-data.json";
 import FriendList from "../FriendList/FriendList";
-import friends from "../../data/friends.json";
 import TransactionHistory from "../TransactionHistory/TransactionHistory";
-import transactions from "../../data/transactions.json";
 
 function App() {
   return (
     <div className={styles.container}>
-      <Profile
-        name={user.name}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
+      <Profile {...data.user} />
 
-      <Statistics title="Upload stats" stats={statisticalData} />
-      <Statistics stats={statisticalData} />
+      <Statistics title="Upload stats" stats={data.statisticalData} />
+      <Statistics stats={data.statisticalData} />
 
-      <FriendList friends={friends} />
+      <FriendList friends={data.friends} />
 
-      <TransactionHistory items={transactions} />
+      <TransactionHistory items={data.transactions} />
     </div>
   );
 }
