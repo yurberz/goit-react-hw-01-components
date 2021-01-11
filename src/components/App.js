@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./App.module.css";
-import data from "../../data";
-import Profile from "../Profile/Profile";
-import Statistics from "../Statistics/Statistics";
-import FriendList from "../FriendList/FriendList";
-import TransactionHistory from "../TransactionHistory/TransactionHistory";
+import data from "../data";
+import Profile from "./Profile/Profile";
+import Statistics from "./Statistics/Statistics";
+import FriendList from "./FriendList/FriendList";
+import TransactionHistory from "./TransactionHistory/TransactionHistory";
 
 function App() {
   return (
